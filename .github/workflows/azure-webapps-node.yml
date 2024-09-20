@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ribbit Rocket - To the Moon, One Leap at a Time!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>To the Moon, One Leap at a Time!</h1>
+            <p>Buy $RIBBIT, One Leap at a Time!</p>
+            <div class="cta-buttons">
+                <a href="#buy" class="cta-button">Buy $RIBBIT</a>
+                <a href="#community" class="cta-button">Join the Community</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>What is Ribbit Rocket?</h2>
+        <p>Ribbit Rocket is a cryptocurrency with a mission: leap to the moon, one jump at a time! With a fun, engaging community, we're aiming for the stars—literally!</p>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+        <h2>Why Choose Ribbit Rocket?</h2>
+        <div class="feature">
+            <h3>Fast and Reliable</h3>
+            <p>Ribbit Rocket offers rapid transactions.</p>
+        </div>
+        <div class="feature">
+            <h3>Community-Powered</h3>
+            <p>A vibrant community driving the project forward.</p>
+        </div>
+        <div class="feature">
+            <h3>Secure</h3>
+            <p>Your transactions and assets are protected with top-notch security.</p>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap">
+        <h2>Our Roadmap to the Moon</h2>
+        <ul>
+            <li>Q1: Launch of $RIBBIT</li>
+            <li>Q2: Community Building</li>
+            <li>Q3: Marketplace Integration</li>
+            <li>Q4: Global Expansion</li>
+        </ul>
+    </section>
+
+    <!-- Community Section -->
+    <section id="community">
+        <h2>Join Our Ribbit Rocket Community</h2>
+        <p>Our community is the heart of Ribbit Rocket. Join us on Discord and Twitter to stay up-to-date.</p>
+        <div class="social-links">
+            <a href="#">Discord</a>
+            <a href="#">Twitter</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <a href="#buy">Buy $RIBBIT</a> | 
+            <a href="#roadmap">Roadmap</a> | 
+            <a href="#community">Community</a>
+            <p>© 2024 Ribbit Rocket. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #2b0048;
+    color: #fff;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Hero Section */
+#hero {
+    background: url('path-to-your-image.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.cta-button {
+    background-color: #21c064;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #1ba854;
+}
+
+/* About Section */
+#about, #features, #roadmap, #community {
+    padding: 50px 20px;
+    background-color: #340052;
+    text-align: center;
+}
+
+#about {
+    background-color: #4d006b;
+}
+
+/* Features Section */
+.feature {
+    margin-bottom: 20px;
+}
+
+/* Roadmap Section */
+#roadmap ul {
+    list-style: none;
+    padding: 0;
+}
+
+#roadmap ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #580085;
+    border-radius: 5px;
+}
+
+/* Community Section */
+.social-links a {
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+/* Footer */
+footer {
+    background-color: #1d0032;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content a {
+    margin: 0 10px;
+}
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
